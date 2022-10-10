@@ -1,0 +1,151 @@
+.nav-bar{
+    height: 3.5rem;
+    width: 100%;
+    background: white;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.103);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+}
+
+.nav-bar>div{
+    display: flex;
+    align-items: center;
+}
+
+.tool-tip{
+    position: absolute;
+    bottom: -3rem;
+    font-size: .75em;
+    color: rgb(236, 236, 236);
+    background-color: rgba(40, 40, 40, 0.801);
+    padding: .6rem .7rem;
+    border-radius: 6px;
+    box-shadow: 6px 0 20px rgba(0, 0, 0, 0.103);
+    opacity: 0;
+    transition: opacity .15s;
+    pointer-events: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+/* ****************LEFT NAV************ */
+.left-nav{
+    width: 18rem;
+    margin-left: 16px;
+}
+
+.left-nav>img{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 8px;
+}
+
+.search-bar{
+    height: 2.5rem;
+    width: 14.5rem;
+    background-color: #F0F2F5;
+    border-radius: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.search-bar>img{
+    margin-left: 0.75rem;
+    margin-right: 0.625rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+.search-bar>input{
+    border: none;
+    height: 1.25rem;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+/* ****************MIDDLE NAV************ */
+.middle-nav{
+    justify-content: space-between;
+    width: 42rem;
+}
+
+.middle-nav img{
+    width: 1.5rem;
+    margin: 0 3rem;
+    position: relative;
+}
+
+.middle-nav:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 8rem;
+    height: 3px;
+    background-color: #1877F2;
+    display: block;
+}
+
+.middle-nav button{
+    position: relative;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+#home:hover .tool-tip, 
+#watch:hover .tool-tip, 
+#market-place:hover .tool-tip, 
+#groups:hover .tool-tip, 
+#gaming:hover .tool-tip{
+    opacity: 1;  
+}
+
+
+
+/* ****************RIGHT NAV************ */
+.right-nav{
+    margin-right: 1rem;
+}
+
+.right-nav button{
+    border: none;
+    cursor: pointer;
+}
+.right-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E4E6EB;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 20px;
+    margin-left: .5rem;
+}
+
+.profile-photo{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 20px;
+}
+
+
+.right-icons .tool-tip{
+    bottom: -2rem;
+}
+
+.right-icons:hover .tool-tip{
+    opacity: 1;  
+}

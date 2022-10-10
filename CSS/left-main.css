@@ -1,0 +1,74 @@
+.left-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 19.5rem;
+    position: fixed;
+    top: 3.5rem;
+    bottom: 0;
+    margin-left: .5rem;
+    margin-top: 1.5rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.left-title{
+    font-size: 1.15em;
+    font-weight: 500;
+    margin-left: 0.75rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.left-upper-main button,
+.left-lower-main button{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    border: none;
+    margin-bottom: .5rem;
+    height: 3.25rem;
+}
+
+.left-upper-main .icon, 
+.left-upper-main .profile-photo,
+.left-lower-main .groups-photo,
+.left-lower-main .icon{
+    margin-left: .5rem;
+}
+
+.left-upper-main,
+.left-lower-main{
+    display: flex;
+    flex-direction: column;
+}
+
+.left-upper-main button,
+.left-lower-main button{
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    cursor: pointer;
+}
+
+.left-upper-main button:hover,
+.left-lower-main button:hover{
+    background-color: #F0F2F5;
+}
+
+/* **************** UPPER **************** */
+.left-upper-main::after{
+    content: '';
+    width: 18rem;
+    height: 1px;
+    background-color: #F0F2F5;
+    margin-left: .5rem;
+}
+
+
+/* **************** LOWER **************** */
+.groups-photo{
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
